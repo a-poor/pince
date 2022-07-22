@@ -1,8 +1,20 @@
 [package]
 name = "pince"
 version = "0.1.0"
+authors = ["Austin Poor <code@austinpoor.com>"]
 edition = "2021"
+description = "An HTTP server library built on top of Hyper."
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/a-poor/pince"
+repository = "https://github.com/a-poor/pince"
+
+keywords = ["async", "http", "http-server"]
+categories = ["network-programming", "web-programming:http-server"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+
